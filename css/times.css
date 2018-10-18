@@ -1,0 +1,122 @@
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+    line-height: 1.6;
+    font-family: Verdana, Geneva, sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    /*font-family: font stack required for body text */
+}
+h1, h2, h3, h4{
+    /*font-family: font stack required for headings */
+  margin: 1.414em 0 0.5em;
+  font-weight: inherit;
+  line-height: 1.2;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.333em;
+}
+p{
+    
+}
+.container{
+    max-width: 1500px;
+}
+.subnav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    background-color: hsl(60, 100%, 95%);
+}
+.subnav a{
+        padding: 9px;
+        color: hsl(240, 100%, 10%);
+}
+.mainnav{ 
+    display: flex;
+    align-items: baseline;
+    background-color: hsl(240, 100%, 65%);
+}
+.mainnav a{
+    display: block;
+    width: 100%;
+    font-size: 1.777em;
+    color: hsl(240, 100%, 10%);
+}
+.masthead{
+    background-color: hsl(60, 100%, 95%);
+    border-bottom: 20px solid hsl(60, 100%, 95%);
+}
+.times-logo{}
+.masthead h1{
+    font-size: 2.369em;
+}
+.content{
+    background-color: hsl(120, 100%, 95%);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+@media screen and (max-width: 990px) {
+    .content {
+        background-color: hsl(39, 100%, 80%);
+    }
+    * {
+        width: 97vw;
+    }
+}
+@media screen and (max-width: 600px) {
+    .content {
+        background-color: hsl(0, 100%, 75%);
+    }
+    * {
+        width: 96vw;
+    }
+}
+.content .story{
+    
+}
+.story.lead-story{
+    color: hsl(120, 100%, 10%) !important;
+}
+h1.story-title{
+        display: flex;
+        align-items: flex-start
+}
+.story img{
+    float:left;
+}
+.story p{
+    font-size: 1em;
+}
+.story blockquote{
+    quotes: "\201E" "\201D";
+}
+.story blockquote::before{
+    content: open-quote;
+}
+.story blockquote::after{
+    content: close-quote;
+}
+.story p.byline{
+    display: flex;
+    justify-content:flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+}
+p.byline span.author{
+   font-weight: normal;
+}
+p.byline span.pub{
+}
+.foot{
+}
+.foot p{
+    font-size: 0.75em;
+}
